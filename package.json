@@ -2,13 +2,14 @@
   "name": "universal-analytics",
   "version": "0.4.20",
   "description": "A node module for Google's Universal Analytics tracking",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "make test"
+    "test": "mocha --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:peaksandpies/universal-analytics.git"
+    "url": "git@github.com:kavehsajjadi/typescript-universal-analytics.git"
   },
   "keywords": [
     "google",
@@ -17,15 +18,17 @@
     "tracking"
   ],
   "dependencies": {
-    "debug": "^3.0.0",
-    "request": "^2.88.0",
-    "uuid": "^3.0.0"
+    "debug": "^3.2.6",
+    "request": "^2.88.2",
+    "uuid": "^3.4.0"
   },
   "devDependencies": {
-    "should": "*",
+    "@types/node": "^13.13.2",
+    "mocha": "^7.1.2",
+    "should": "^13.2.3",
     "sinon": "^1.17.7",
-    "mocha": "*"
+    "tslib": "^1.11.1"
   },
-  "author": "Jörg Tillmann <joerg@peaksandpies.com>",
+  "author": "Kaveh Sajjadi <me@kavehsajjadi.com>",
   "license": "MIT"
 }

@@ -6,9 +6,9 @@ var should = require("should");
 var sinon = require("sinon");
 var url = require("url");
 
-var ua = require("../lib/index.js");
-var utils = require("../lib/utils.js")
-var config = require("../lib/config.js")
+var ua = require("../dist/index.js");
+var utils = require("../dist/utils.js")
+var config = require("../dist/config.js")
 
 
 describe("ua", function () {
